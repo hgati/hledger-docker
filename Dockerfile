@@ -9,6 +9,8 @@ RUN /hledger/bin/compile.sh
 # create target folder for journal volume
 RUN mkdir /journals
 
+COPY journals /journals
+
 VOLUME [ "/journals" ]
 
 EXPOSE 5000
